@@ -1,0 +1,36 @@
+#dni {
+    size:36px ; 
+    padding-left: 10px;
+    padding-top: -3px;
+ }
+ #dni2{
+   border-radius: 36px;
+   border-color: blue;
+   border-width: 5px;
+   display:table-row;
+   
+ }
+ #dni3{
+   padding-left: 4px;
+   
+ }
+ #Start {
+padding-top: 20px;}
+#End{
+    padding-top: 20px;
+}
+#Categori{
+    padding-top: 20px;
+}
+#Audio{
+    padding-top: 20px;
+}
+#Subtitles{
+    padding-top: 20px;
+}
+#Directors{
+    padding-top: 20px;
+}
+#Actors{
+    padding-top: 20px;  
+}

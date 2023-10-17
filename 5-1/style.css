@@ -1,0 +1,50 @@
+body{
+    background-image: url("changing-colors.gif");
+    background-size: cover;
+
+}
+h1{
+    font-weight:bolder;
+}
+h2{
+    
+    color:aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: inherit;
+    font-size-adjust: unset;
+}
+p{
+    text-decoration: double;
+    font-display:initial;
+    font-size: x-large;
+}
+#Animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration:15s;
+    animation-iteration-count:infinite;
+  }
+  
+  @keyframes example {
+    
+    from {background-color:black;}
+    to {background-color: white;}
+    
+  }
+  #keks{
+    padding-left: 40vw;
+    font-size: xx-large;
+  }
+  #Questions{
+    color:white;
+  }
+  #Questions>h1{
+    color:black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #Questions>p:hover{
+    font-size: xx-large;
+  }
+  
