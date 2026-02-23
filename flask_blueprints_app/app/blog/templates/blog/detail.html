@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }}{% endblock %}
+{% block blueprint_name %}blog{% endblock %}
+
+{% block content %}
+<article>
+  <h1>{{ post.title }}</h1>
+  <p class="text-muted">By {{ post.author }}</p>
+  <p>{{ post.content }}</p>
+  <a href="{{ url_for('blog.post_list') }}">&larr; Back to all posts</a>
+</article>
+{% endblock %}
