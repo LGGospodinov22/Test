@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Blog{% endblock %}
+{% block blueprint_name %}blog{% endblock %}
+
+{% block content %}
+<h1 class="mb-3">Blog Posts</h1>
+<div class="list-group">
+  {% for post in posts %}
+    <a class="list-group-item list-group-item-action" href="{{ url_for('blog.post_detail', id=post.id) }}">
+      <strong>{{ post.title }}</strong> <span class="text-muted">by {{ post.author }}</span>
+    </a>
+  {% endfor %}
+</div>
+{% endblock %}

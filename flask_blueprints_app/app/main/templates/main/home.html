@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block blueprint_name %}main{% endblock %}
+
+{% block content %}
+<h1 class="mb-3">Home Page</h1>
+<p>Welcome! Visit one of the sections below:</p>
+<ul>
+  <li><a href="{{ url_for('blog.post_list') }}">Blog posts</a></li>
+  <li><a href="{{ url_for('api.health') }}">API health endpoint</a></li>
+  <li><a href="{{ url_for('api.posts') }}">API posts endpoint</a></li>
+</ul>
+{% endblock %}
