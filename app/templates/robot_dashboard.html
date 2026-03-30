@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Robot Control Dashboard</h1>
+<form method="post">
+  <label>Command</label>
+  <select name="command">
+    <option value="MOVE_FORWARD">Move Forward</option>
+    <option value="TURN_LEFT">Turn Left</option>
+    <option value="TURN_RIGHT">Turn Right</option>
+    <option value="STOP">Stop</option>
+  </select>
+  <button type="submit">Send</button>
+</form>
+
+{% if command_sent %}
+  <p>Last command: <strong>{{ command_sent }}</strong></p>
+{% endif %}
+{% endblock %}
